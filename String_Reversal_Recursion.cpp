@@ -1,20 +1,25 @@
-# include <stdio.h>
+# include <iostream>
+#include <string.h>
+using namespace std;
 void reverse(char *str)
 {
    if (*str)
    {
-       reverse(str+1);
-       printf("%c", *str);
+       reverse(str+1); //Recursion
+       cout<<("%c", *str);
    }
 }
  
 int main()
 {
-   char a[] = "SIT";
-   reverse(a);
+   char a[50];
+   cout<<"Enter a string: ";
+   cin>>a;
+   reverse(a); //Function calling
    return 0;
 }
 
 /*OUTPUT
-TIS
+Enter a string: Tarun
+nuraT
 */
