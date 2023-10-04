@@ -2,7 +2,7 @@
 using namespace std;
 
 int add(int n){
-    if(n<=1){ //Terminating statement
+    if(n<=1){ //Terminating statement (Base Condition)
         return 1;
     }else{
         return (n+add(n-1)); //Recursion
