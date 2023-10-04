@@ -3,7 +3,7 @@
 using namespace std;
 void reverse(char *str)
 {
-   if (*str)
+   if (*str) //Base Condition
    {
        reverse(str+1); //Recursion
        cout<<("%c", *str);
